@@ -92,7 +92,7 @@ Full project documentation is available in the `/docs` folder:
 
 ---
 
-🚀 Business Value
+## 🚀 Business Value
 
 This project enables:
 
