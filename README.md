@@ -69,7 +69,14 @@ The architecture follows a **Medallion Design (Bronze, Silver, Gold layers)**.
 - CRM dataset (customers, demographics)
 - ERP dataset (sales, products, transactions)
 
+## 📚 Documentation
 
+Full project documentation is available in the `/docs` folder:
+
+- Architecture → docs/architecture.md
+- Data Dictionary → docs/data_dictionary.md
+- ETL Process → docs/etl_process.md
+- Data Quality Rules → docs/data_quality_rules.md
 
 ---
 
