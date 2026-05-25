@@ -33,7 +33,7 @@ It integrates CRM and ERP datasets into a structured, analytics-ready model foll
 - `sql/bronze` → raw data ingestion scripts  
 - `sql/silver` → data cleaning and transformation scripts  
 - `sql/gold` → star schema (fact & dimension views)  
-- `data/` → source datasets (CRM & ERP)  
+- `datasets/` → source datasets (CRM & ERP)  
 - `docs/` → project documentation and architecture  
 
 ---
