@@ -1,0 +1,14 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# SQL logs
+*.log
+*.tmp
+
+# Backup files
+*.bak
+
+# Sensitive files
+.env
+credentials.txt
