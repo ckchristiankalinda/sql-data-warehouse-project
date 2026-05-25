@@ -8,7 +8,7 @@ It integrates CRM and ERP datasets into a structured, analytics-ready model foll
 ---
 ### 🖼️ Visual Architecture
 
-![Data Warehouse Architecture](docs/architecture.png)
+![Data Warehouse Architecture](docs/architecture.png.png)
 
 
 ## 🧱 Architecture (Medallion Design)
