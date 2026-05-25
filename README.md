@@ -1,84 +1,102 @@
-# 🏗️ SQL Data Warehouse Project (CRM + ERP)
+# 🏗️ SQL Data Warehouse Project (CRM + ERP Integration)
 
 ## 📊 Overview
-This project implements a complete Data Warehouse solution using SQL Server.  
-It integrates CRM and ERP datasets into a structured analytics-ready model.
+This project implements a complete **Data Warehouse solution using SQL Server**.
 
-The architecture follows a **Medallion Design (Bronze, Silver, Gold layers)**.
+It integrates CRM and ERP datasets into a structured, analytics-ready model following a **Medallion Architecture (Bronze, Silver, Gold layers)**.
 
 ---
 
-## 🧱 Architecture
+## 🧱 Architecture (Medallion Design)
 
 ### 🥉 Bronze Layer (Raw Data)
-- Raw ingestion of CRM and ERP datasets
-- No transformation applied
+- Raw ingestion of CRM and ERP datasets using BULK INSERT
+- No transformations applied
+- Data is stored exactly as received from source systems
 
-### 🥈 Silver Layer (Cleaned Data)
-- Data cleaning (NULL handling, duplicates removal)
-- Standardization of formats
-- Data type corrections
+### 🥈 Silver Layer (Cleaned & Standardized Data)
+- Data cleaning and transformation
+- Handling NULL values and inconsistencies
+- Removing duplicates
+- Standardizing formats (text, dates, categories)
+- Preparing data for analytical modeling
 
-### 🥇 Gold Layer (Business Layer)
-- Star schema design
-- Fact and dimension tables
-- Analytics-ready views
+### 🥇 Gold Layer (Business / Analytics Layer)
+- Star schema design (Fact & Dimension model)
+- Business-ready datasets for reporting
+- Optimized for BI tools (Power BI / Tableau)
 
 ---
 
 ## 📂 Project Structure
 
- → raw data ingestion scripts  
- → data cleaning and transformation  
- → star schema (facts & dimensions)  
- → reporting views  
- → source datasets (CRM & ERP)  
- → documentation and architecture  
+- `sql/bronze` → raw data ingestion scripts  
+- `sql/silver` → data cleaning and transformation scripts  
+- `sql/gold` → star schema (fact & dimension views)  
+- `data/` → source datasets (CRM & ERP)  
+- `docs/` → project documentation and architecture  
 
 ---
 
 ## ⚙️ Technologies Used
 - SQL Server (T-SQL)
-- Data Modeling (Star Schema)
+- Data Warehousing Concepts
 - ETL Pipelines
-- Data Cleaning & Transformation
+- Star Schema Data Modeling
+- Window Functions (ROW_NUMBER, LEAD)
+- Data Cleaning & Transformation Techniques
 
 ---
 
 ## 🔄 ETL Process
 
-1. Load raw CRM & ERP data into Bronze tables  
-2. Clean and transform data in Silver layer  
-3. Build analytical model in Gold layer  
-4. Create reporting views for dashboards  
+1. **Extract** → Load CRM & ERP raw CSV files  
+2. **Load (Bronze Layer)** → Store raw data without transformation  
+3. **Transform (Silver Layer)** → Clean, standardize, and deduplicate data  
+4. **Model (Gold Layer)** → Build dimensional model (facts & dimensions)  
+5. **Consume** → Use in BI dashboards and reporting
 
 ---
 
 ## 📊 Key Features
 
-- Customer dimension modeling  
-- Product dimension modeling  
-- Sales fact table  
-- Data quality handling (NULLs, duplicates, formatting issues)  
-- Separation of business logic (Gold layer)
+- End-to-end ETL pipeline implementation  
+- Data cleaning and deduplication logic  
+- Medallion architecture (Bronze / Silver / Gold)  
+- Star schema design (Fact & Dimension tables)  
+- Business-ready analytics model  
+- Data quality handling (NULLs, inconsistencies, standardization)
 
 ---
 
-## 📁 Source Data
 
-- CRM dataset (customers, demographics)
-- ERP dataset (sales, products, transactions)
+## 📁 Data Sources
+
+- CRM dataset: customers and sales information  
+- ERP dataset: products, categories, and operational data  
+
+---
 
 ## 📚 Documentation
 
 Full project documentation is available in the `/docs` folder:
 
-- Architecture → docs/architecture.md
-- Data Dictionary → docs/data_dictionary.md
-- ETL Process → docs/etl_process.md
-- Data Quality Rules → docs/data_quality_rules.md
+- 📌 Architecture → `docs/architecture.md`  
+- 📌 Data Dictionary → `docs/data_dictionary.md`  
+- 📌 ETL Process → `docs/etl_process.md`  
+- 📌 Data Quality Rules → `docs/data_quality_rules.md`  
 
 ---
 
+🚀 Business Value
+
+This project enables:
+
+- Sales performance analysis
+- Customer segmentation
+- Product profitability analysis
+- KPI dashboards and reporting
+
 ## 👤 Author
-Data Engineering Project by MUTIA KALINDA Christian
+**Mutia Kalinda Christian**  
+Data Engineering Portfolio Project
