@@ -6,7 +6,7 @@ This project implements a complete **Data Warehouse solution using SQL Server**.
 It integrates CRM and ERP datasets into a structured, analytics-ready model following a **Medallion Architecture (Bronze, Silver, Gold layers)**.
 
 ---
-## 🖼️ Architecture Diagram
+### 🖼️ Visual Architecture
 
 ![Data Warehouse Architecture](docs/architecture.png)
 
