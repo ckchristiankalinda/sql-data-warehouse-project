@@ -33,7 +33,7 @@
 -- - Error handling using TRY...CATCH
 -- - Batch execution timing
 
--- AUTHOR: CK Ck
+-- AUTHOR: MUTIA KALINDA Christian
 -- PROJECT: SQL Data Warehouse (CRM + ERP Integration)
 -- =========================================================
 
